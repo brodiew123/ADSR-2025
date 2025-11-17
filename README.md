@@ -10,6 +10,8 @@ I used Peter Zimon's library for Pico as the core: https://github.com/peterzimon
 And then used the example here and converted that to work on Pico: https://github.com/mo-thunderz/adsr?tab=readme-ov-file
 Then the rest of the structure is coded by me. 
 
-I've left a lot of uncommented code because I'm yet to add save and load with many save slots.
+One major thing I did fix was the decending Release DAC output. This was being calculated in a way that seemed to be truncated and stepped, so I calculated it in float instead for a really smooth line.
+
+I've left a lot of commented code because I'm yet to add save and load with many save slots, and load on start up. I'll clean it up once I have all the functionality included.
 
 If you use this, let me know, I'd love to hear from you.
